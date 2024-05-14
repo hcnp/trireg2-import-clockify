@@ -7,5 +7,5 @@ import (
 )
 
 func FrontPage(c *gin.Context) {
-  fmt.Fprintf(c.Writer, "Hello, %s!", c.Param("name"))
+  fmt.Fprint(c.Writer, "Trireg2 Clockify Importer")
 }
