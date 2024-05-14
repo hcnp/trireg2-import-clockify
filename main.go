@@ -1,5 +1,7 @@
 package main
 
+//go:generate oapi-codegen --config=api/config.yaml trireg2-api/openapi/trireg2.yaml
+
 import (
 	"github.com/gin-gonic/gin"
 
@@ -13,7 +15,6 @@ func main() {
 func run() {
   router := gin.Default()
   router.GET("/", cmd.FrontPage)
-  router.GET("/:name", cmd.FrontPage)
 
   router.Run(":8080")
 }

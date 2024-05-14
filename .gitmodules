@@ -1,0 +1,3 @@
+[submodule "trireg2-api"]
+	path = trireg2-api
+	url = git@github.com:trifork/trireg2-api.git
