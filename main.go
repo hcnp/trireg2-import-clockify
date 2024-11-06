@@ -4,8 +4,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-
-  "github.com/hcnp/trireg2-import-clockify/cmd"
+	"github.com/hcnp/trireg2-import-clockify/cmd"
 )
 
 func main() {
@@ -18,4 +17,3 @@ func run() {
 
   router.Run(":8080")
 }
-
